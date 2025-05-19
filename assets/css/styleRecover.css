@@ -1,0 +1,23 @@
+.login__actions p {
+  text-align: center;
+}
+
+.login__cancel-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  color: #1e88e5;
+  border: 2px solid #1e88e5;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.login__cancel-link:hover {
+  background-color: #e53935;
+  border-color: #e53935;
+  color: #fff;
+}

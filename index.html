@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/styleFlashMessage.css" />
     <script defer src="assets/js/showpass.js"></script>
+    <script defer src="assets/js/validation.js"></script>
+    <script defer src="assets/js/flashMessage.js"></script>
     <title>Login</title>
   </head>
   <body>
     <main class="login">
       <section class="section-area login__form-section">
-        <form action="#" class="login__form">
+        <form action="#" class="login__form" id="login-form">
           <div class="login__title">
             <p class="title__up">Bem-vindo ao</p>
             <div class="title__name">
@@ -26,28 +29,26 @@
           </div>
 
           <div class="login__field">
-            <label for="email" class="login__label">
+            <label for="login-email" class="login__label">
               <img src="assets/images/icons/mail.svg" alt="" />
             </label>
             <input
               type="email"
-              id="email"
+              id="login-email"
               class="login__input"
               placeholder="Seu Email"
-              required
             />
           </div>
 
           <div class="login__field">
-            <label for="password" class="login__label">
+            <label for="login-password" class="login__label">
               <img src="assets/images/icons/lock-keyhole.svg" alt="" />
             </label>
             <input
               type="password"
-              id="password"
+              id="login-password"
               class="login__input"
               placeholder="Sua Senha"
-              required
             />
             <img
               src="assets/images/icons/eye.svg"
@@ -61,7 +62,7 @@
           </div>
 
           <div class="login__links">
-            <a href="#" class="login__link">Esqueceu a sua senha?</a>
+            <a href="assets/pages/recover.html" class="login__link">Esqueceu a sua senha?</a>
           </div>
           <div class="divider">ou</div>
           <div class="login__social">
@@ -78,5 +79,6 @@
         </div>
       </section>
     </main>
+    <div id="toast-container"></div>
   </body>
 </html>

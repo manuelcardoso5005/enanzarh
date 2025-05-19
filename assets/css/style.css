@@ -145,8 +145,8 @@ ol {
 
 /* AÇÕES */
 .login__actions {
-  display: flex;
-  justify-content: center;
+  /*   display: flex; */
+  /*   justify-content: center; */
 }
 
 .login__button {
@@ -184,6 +184,28 @@ ol {
 .login__links img {
   width: 14px;
   margin-left: 4px;
+}
+
+/* Spinner dentro do botão */
+.button-spinner {
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: spin 0.8s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* VISUAL */

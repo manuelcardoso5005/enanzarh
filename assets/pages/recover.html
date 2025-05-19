@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperar Senha</title>
+    <link rel="stylesheet" href="../css/styleRecover.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/styleFlashMessage.css" />
+    <script defer src="../js/flashMessage.js"></script>
+    <script defer src="../js/recoverValidation.js"></script>
+  </head>
+  <body>
+    <main class="login">
+      <section class="section-area login__form-section">
+        <form action="#" class="login__form" id="recover-form">
+          <div class="login__title">
+            <p class="title__up">Bem-vindo ao</p>
+            <div class="title__name">
+              <div>
+                <img src="../images/logo/logo-horizontal.png" alt="" />
+              </div>
+
+              <p class="firma_name">Enanza</p>
+            </div>
+          </div>
+          <div class="text">
+            <p>Recupere a sua senha</p>
+          </div>
+
+          <div class="login__field">
+            <label for="recover-email" class="login__label">
+              <img src="../images/icons/mail.svg" alt="" />
+            </label>
+            <input
+              type="email"
+              id="recover-email"
+              class="login__input"
+              placeholder="Digit o seu Email"
+            />
+          </div>
+          <div class="login__actions">
+            <button type="submit" class="login__button">Enviar</button>
+            <p>
+              <a href="../../index.html" class="login__cancel-link">Cancelar</a>
+            </p>
+          </div>
+        </form>
+      </section>
+      <section class="section-area login__visual">
+        <div>
+          <img src="../images/background/login-bg.png" alt="" />
+        </div>
+      </section>
+    </main>
+    <div id="toast-container"></div>
+  </body>
+</html>
