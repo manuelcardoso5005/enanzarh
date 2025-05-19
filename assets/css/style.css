@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* LAYOUT BASE */
+.login {
+  flex-direction: column;
+}
+
+.section-area {
+  width: 100%;
+  height: 100vh;
+}
+
+.login__form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+
+.login__form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login__title {
+  text-align: center;
+}
+
+.title__name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.title__name img {
+  width: 60px;
+}
+
+.title__up {
+  font-weight: 400;
+  font-size: 1.3em;
+  color: #777;
+}
+
+.firma_name {
+  font-size: 2.8em;
+  font-weight: 600;
+  color: #000;
+}
+
+.text p {
+  text-align: center;
+  font-weight: 500;
+  color: #999;
+}
+
+/* CAMPOS DE LOGIN */
+.login__field {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding-left: 2.5rem;
+  background-color: #fff;
+}
+
+.login__field input {
+  width: 100%;
+  padding: 0.75rem;
+  background: none;
+}
+
+.login__label {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.login__label img {
+  width: 20px;
+}
+
+/* AÇÕES */
+.login__actions {
+  display: flex;
+  justify-content: center;
+}
+
+.login__button {
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    background-color: #1e88e5;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(30, 136, 229, 0.4);
+  }
+  
+  .login__button:hover {
+    background-color: #1565c0;
+    box-shadow: 0 6px 16px rgba(21, 101, 192, 0.5);
+  }
+  
+
+.login__button:hover {
+  background-color: #1565c0;
+}
+
+.login__links {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.login__links a {
+  color: #1e88e5;
+  font-weight: 500;
+}
+
+.login__links img {
+  width: 14px;
+  margin-left: 4px;
+}
+
+/* VISUAL */
+.login__visual {
+  display: none;
+  position: relative;
+}
+
+.login__visual img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* Divisor  */
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #999;
+  font-weight: 500;
+  margin: 1.5em 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #ccc;
+}
+
+.divider::before {
+  margin-right: 0.75em;
+}
+
+.divider::after {
+  margin-left: 0.75em;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #999;
+  font-weight: 500;
+  margin: 1.5em 0 1em;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #ccc;
+}
+
+.divider::before {
+  margin-right: 0.75em;
+}
+
+.divider::after {
+  margin-left: 0.75em;
+}
+
+.login__social {
+  display: flex;
+  justify-content: center;
+}
+
+.google-login {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.75em 1.5em;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.google-login:hover {
+  background-color: #f2f2f2;
+}
+
+.google-login img {
+  width: 20px;
+  height: 20px;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .login {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section-area {
+    width: 50%;
+    height: 100vh;
+    /*     padding: 3rem; */
+  }
+
+  .login__form-section {
+    padding: 3rem;
+  }
+
+  .login__visual {
+    display: block;
+    position: relative;
+  }
+
+  .login__visual::after {
+    content: "";
+    background-color: #1565c0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 1;
+  }
+}
