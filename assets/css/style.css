@@ -107,11 +107,27 @@ ol {
 /* CAMPOS DE LOGIN */
 .login__field {
   position: relative;
-  border: 1px solid #ccc;
   border-radius: 25px;
   padding-left: 2.5rem;
   background-color: #fff;
   overflow: hidden;
+}
+
+.login__field.error {
+  border: 1px solid red;
+  transition: border 0.3s ease;
+}
+
+.login__field.error input::placeholder {
+  color: red;
+}
+
+.login__field.error .icon {
+  stroke: red;
+}
+
+.login__field.no_error {
+  border: 1px solid #ccc;
 }
 
 .toggle-password {
@@ -298,6 +314,27 @@ ol {
 .google-login img {
   width: 20px;
   height: 20px;
+}
+
+/*show pass*/
+.icon-eye-on {
+  display: block;
+}
+
+.icon-eye-off {
+  display: none;
+}
+
+.password-visible .icon-eye-on {
+  display: none;
+}
+
+.password-visible .icon-eye-off {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 /* DESKTOP */
