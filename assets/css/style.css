@@ -446,6 +446,7 @@ body.dark-mode .change-lg select {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 5000;
   /* Essa sombra aparece principalmente embaixo */
 }
 
@@ -521,6 +522,7 @@ body.dark-mode .change-lg select {
   .login {
     display: flex;
     flex-direction: row;
+    padding-top: 0em;
   }
 
   .section-area {
