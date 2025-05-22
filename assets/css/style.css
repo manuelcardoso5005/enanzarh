@@ -48,6 +48,7 @@ ol {
 /* LAYOUT BASE */
 .login {
   flex-direction: column;
+  padding-top: 1.5em;
 }
 
 .section-area {
@@ -68,7 +69,7 @@ ol {
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1em;
 }
 
 .login__title {
@@ -79,7 +80,7 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .title__name img {
@@ -270,7 +271,7 @@ ol {
   text-align: center;
   color: #999;
   font-weight: 500;
-  margin: 1.5em 0 1em;
+  margin: 0.5em 0 1em;
 }
 
 .divider::before,
@@ -437,10 +438,14 @@ body.dark-mode .change-lg select {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em 2em;
+  padding: 0.5em 2em;
   background-color: #fff;
   box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   /* Essa sombra aparece principalmente embaixo */
 }
 
